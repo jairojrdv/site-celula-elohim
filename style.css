@@ -1,0 +1,205 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+.active {
+    border-bottom: solid 2px #ff0000;
+}
+.logo rect#rect-1 {
+    animation: moveRect1 2s ease-in-out reverse;
+}
+.logo rect#rect-2 {
+    animation: moveRect2 2s ease-in-out reverse;
+}
+.logo path {
+    opacity: 0;
+    animation: textFade 2s 1s ease-in forwards;
+}
+
+@keyframes moveRect1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(30vw);
+    }
+}
+@keyframes moveRect2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-30vw);
+    }
+}
+@keyframes textFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h2 {
+    text-align: center;
+}
+
+main abbr {
+    color: blue;
+    text-decoration: none;
+}
+main {
+    border-left: solid 2px #ff0000;
+    border-right: solid 2px #fafafa;
+    padding: 0 10px;
+}
+main,nav {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+
+header img {
+    width: 400px;
+    margin: 50px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 80%;
+    
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+    text-align: center;
+}
+section .lider{
+    height: 300px;
+    width: 180px;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+
+}
+section div img{
+    height: 100%; 
+    margin: 0 auto;
+}
+#anderson{
+    margin-left: -115px;
+    transform: scaleX(-1);
+}
+#jairo{
+    transform: scaleX(-1);
+}
+#rian{
+    margin-left: -45px;
+}
+.lideres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.info {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.info:nth-child(1){
+    justify-content: flex-end;
+}
+.info:nth-child(3){
+    justify-content: flex-end;
+}
+.info p{
+    width: 600px;
+    max-width: 45%;
+}
+
+/* Reuniões */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.card {
+    opacity: .7;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    width: 300px;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(250, 00, 00, .2);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.card:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 12px rgba(250, 00, 00, .8);
+}
+.alert {
+    margin-top: 40px;
+    text-align: center;
+    animation: piscar .8s ease-out alternate-reverse infinite;
+}
+
+@keyframes piscar {
+    0% {
+        color: #ccc;
+        transform: translateY(10px);
+    }
+    50% {
+        color: #008800;
+    }
+    75% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ff0000;
+        transform: translateX(0);
+    }
+}
